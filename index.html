@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+    <title>Proyecto 2 CRUD</title>
+</head>
+<body>
+
+    <header>
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu"><img src="./menu/menu.png" width="30px" height="30px" alt=""></label>
+
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contactos</a></li>
+            <li><a href="#">Registrate</a></li>
+            
+        </ul>
+    </nav>
+    </header>
+
+    <h1 style="text-align: center;">Registro de Biblioteca</h1>
+    
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onSubmitForm();" autocomplete="off">
+                    <div>
+                        <label>Nombre:</label><label class="validation-error hide" id="fullNameValidationError">Este Campo es Nesesario!</label>
+                        <input type="text" name="fullName" id="fullName">
+                    </div>
+                    <div>
+                        <label>Matricula:</label>
+                        <input type="text" name="matricula" id="matricula">
+                    </div>
+                    <div>
+                        <label>Semestre:</label>
+                        <input type="number" name="semestre" id="semestre">
+                    </div>
+                    <div>
+                        <label>Carrera:</label>
+                        <input type="text" name="carrera" id="carrera">
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Guardar">
+                    </div>
+                </form>
+            </td>
+           
+        </tr>
+    </table>
+
+    <table>
+        <tr>
+            <td>
+                <table class="list" id="pantalla">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Matricula</th>
+                            <th>Semestre</th>
+                            <th>Carrera</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+
+                    
+                    </tbody>
+                    
+                </table>
+            </td>
+
+        </tr>
+    </table>
+
+
+    <footer>    
+        <div class="container-footer">
+           
+            
+                <div class="col1">
+                    <div class="logos">
+                        <img src="./img/footer/fb.svg">
+                    </div>   
+                    <div class="logos">
+                        <img src="./img/footer/inta.svg">
+                    </div>   
+                    <div class="logos">
+                        <img src="./img/footer/twi.svg">
+                    </div>                 
+                </div> 
+
+                <div class="col2">
+                    <ul>
+                        
+                        <h1>EMPRESA</h1>
+                        
+                        <li>
+                            <a href="#">Acerca de</a>
+                        </li>
+                        <li>
+                            <a href="#">Empleo</a>
+                        </li>
+                        <li>
+                            <a href="#">Vacantes</a>
+                        </li>
+                        <li>
+                            <a href="#">Contacto</a>
+                        </li>
+                    </ul>
+                   
+                </div> 
+                <div class="col3">
+                    <ul>
+                        
+                        <h1>COMUNIDAD</h1>
+                        
+                        <li>
+                            <a href="#">Desarrolladores</a>
+                        </li>
+                        <li>
+                            <a href="#">Publicidad</a>
+                        </li>
+                        <li>
+                            <a href="#">Proveedores</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+               
+                    </ul>
+                </div>
+                <div class="col4">
+                    <ul>
+                        
+                        <h1>ENLACES ÚTILES</h1>
+                        
+                        <li>
+                            <a href="#">Asistencia</a>
+                        </li>
+                        <li>
+                            <a href="#">You Tube</a>
+                        </li>
+                        <li>
+                            <a href="#">Facebook</a>
+                        </li>
+                        <li>
+                            <a href="#">Snapchat</a>
+                        </li>
+                        <li>
+                            <a href="#">App para Android</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col5">
+                    <ul>
+                        <h1>LEGAL</h1>
+                        <li>
+                            <a href="#">Privacidad</a>
+                        </li>
+                        <li>
+                            <a href="#">Terminos</a>
+                        </li>
+                    </ul>
+                </div>
+      
+        </div>
+
+
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
