@@ -93,13 +93,13 @@ table.list{
 }
 
 td,th{
-    border: 1px solid #000000;
+    border: 1px solid #161515;
     text-align: left;
     padding: 8px;
     
 }
 tr:nth-child(even),table.list thead>tr {
-    background-color: rgb(199, 199, 199);
+    background-color: rgb(197, 197, 197);
 }
 
 input[type=text], input[type=number]{
