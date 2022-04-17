@@ -1,9 +1,10 @@
 
 
+
 body{
     margin: 0;
     font-family: sans-serif;
-    background: linear-gradient(#efffed,#d3edff);
+    background: linear-gradient(#f5e8fc,#c3e3f8);
 }
 header{
     width: 100%;
@@ -74,6 +75,11 @@ header label:hover{
 }
 
 /*BODY*/
+
+h1{
+    color: rgb(176, 79, 255);
+
+}
 body > table{
     width: 65%;
     margin-left: 100px;  
@@ -93,7 +99,7 @@ td,th{
     
 }
 tr:nth-child(even),table.list thead>tr {
-    background-color: rgb(209, 209, 209);
+    background-color: rgb(199, 199, 199);
 }
 
 input[type=text], input[type=number]{
